@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root{
+  --bg-color : #f6f8fa;
+  --text-color :#1d1f27;
+  --main-color : #3a3dbe;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+  background: linear-gradient(60deg,rgba(234,21,21,0.300),
+  rgba(21,21,244,0.400));
+  color: var(--bg-color);
+  
+}
+h1{
+ text-align: center;
+ font-size: 1.5rem;
+}
+.main-container-flex{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.main-container{
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height:fit-content;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: start;
+  
+}
+.total-balance-container{
+  background-color: var(--main-color);
+  margin:10px;
+  width: 280px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+.total-balance-main span:first-child{
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.total-balance-main span:nth-child(n+2){
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.total-balance-income-expense{
+  margin-top: 10px;
+  display: flex;
+  font-size: 13px;
+  color: var(--bg-color);
+ justify-content: space-around;
+}
+.income-expense{
+  display: flex;
+  font-size: 20px;
+  color: var(--bg-color);
+ justify-content: space-around;
+}
+.transactions-main{
+  color: var(--text-color);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.transactions-main span:first-child{
+  margin: 10px;
+  text-align: start;
+  font-weight: bold;
+}
+.transactions-main span:nth-child(n+2){
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+.add-transctions-main{
+  color: var(--text-color);
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  margin: 10px;
+  
+}
+.add-transctions-chose{
+  display: flex;
+  flex: row;
+  margin: 10px 0;
+  background-color: lightgray;
+  border:1px solid lightgray;
+  width: 280px;
+  height: 30px;
+}
+.transactions-chose{
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  width:140px;
+  padding: 2px 5px 2px 5px;
+  font-size: 12px;
+  cursor: pointer;
+  
+}
+.active-transactions{
+  background-color:white;
+}
+.name-main{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.name-main span{
+  margin-bottom: 5px;
+  text-align: start;
+  font-size: 10px;
+  font-weight: bold;
+}
+.name-main input{
+  padding: 2px 5px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+.amount-date-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 280px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.amount-chose{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.date-chose{
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+.amount-chose span,.date-chose span{
+  margin-bottom: 5px;
+  text-align: start;
+  font-size: 10px;
+  font-weight: bold;
+}
+.amount-chose input{
+  border: 1px solid lightgray;
+  outline: none;
+  padding: 5px 3px;
+  border-radius: 4px;
+}
+.date-chose input{
+  border: 1px solid lightgray;
+  outline: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.sumbit-button{
+  width: 280px;
+  margin: 10px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  padding:6px 3px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.name-load{
+  
+  color: var(--text-color);
+  font-size: 9px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+ align-items: start;
+}
+.amount-load{
+  color: var(--text-color);
+  font-size: 9px;
+  font-weight: bold;
+ 
+}
+.date-load{
+  color:var(--text-color);
+  font-size: 6px;
+  font-weight: 500;
+}
+.load-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 280px;
+  position: relative;
+}
+.income{
+  color: yellowgreen;
+}
+.expense{
+  color: indianred;
+}
+.action{
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  height: 100%;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 300ms;
+}
+.action svg{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+span:hover .action{
+  transform: scaleX(1);
+}
+.error-message{
+  width: 100%;
+  text-align: center;
+  color: indianred;
+  font-size: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Expense-tracker</title>
+    <link rel="stylesheet" href="/Style/expence-tracker.css">
+  </head>
+
+  <body>
+    <h1>Expense Tracker</h1>
+    <div class="main-container-flex">
+      <div class="main-container">
+          <div class="total-balance-container">
+            <div class="total-balance-main">
+                <span>Total Balance</span>
+                <span class="total">$0.00</span> 
+            </div>
+            <div class="total-balance-income-expense">
+                <span>INCOME</span><span>EXPENSE</span>
+            </div>
+            <div class="income-expense">
+              <span class="income income-output">+$0.00</span>
+              <span class="expense expense-output">-$0.00</span>
+            </div>
+          </div>
+          <div class="transactions-main">
+              <span>Transactions</span>
+              <span class="transactions-list">No transactions</span>
+          </div>
+          <div class="add-transctions-main">
+            <span>Add Transactions</span>
+            <div class="add-transctions-chose">
+              <div class="transactions-chose transactions-expense ">EXPENSE</div>
+              <div class="transactions-chose transactions-income active-transactions">INCOME</div>
+            </div>
+          </div>
+          <div class="name-main">
+            <span>NAME</span>
+            <input type="text" class="input-name">
+          </div>
+          <div class="amount-date-main">
+              <div class="amount-chose">
+                <span>AMOUNT</span><input class="input-amount" type="number" placeholder="0">
+              </div>
+              <div class="date-chose">
+                <span>DATE</span><input class="input-date" type="date">
+              </div>
+          </div>
+          <div class="error-message"></div>
+          <button class="sumbit-button">SUMBIT</button>
+      </div>
+    </div>
+    <script src="/Javascript/expence-tracker.js"></script>
+  </body>
+</html>

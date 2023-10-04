@@ -1,0 +1,144 @@
+*{
+  font-size: 16px;
+  font-family:'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{ 
+  background: linear-gradient(60deg,rgba(234,21,21,0.300),
+  rgba(21,21,244,0.400));
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.bmi-img{
+  margin-left: 50px;
+  height: 300px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.birim{
+  color:white;
+}
+
+.result-ideal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent ;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 15px;
+  color: white;
+}
+.result-none-ideal{
+  background-color: rgba(255,11,11,0.900);
+  color:white;
+  font-weight: bold;
+}
+.login-input{
+  background:rgba(33, 231, 22, 0.400);
+  width: 500px;
+  height: 500px;
+  border-radius: 25%;
+  border: 5px solid rgba(33, 23, 211, 0.400);
+  position: relative;
+  box-shadow: 2px 2px 10px 5px rgba(33, 231, 22, 0.400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  
+}
+.input-container{
+  display: grid;
+  grid-row-gap: 20px;
+  
+}
+.boy, .kilo{
+  padding:3px;
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid rgba(173, 173, 173, 0.603);
+  border-radius:8px;
+}
+
+.button-calculate-div{
+  display: flex;
+  justify-content: start;
+ 
+}
+.button-calculate{
+  padding: 2px 10px;
+  color:rgb(173, 173, 173); 
+}
+.result-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  
+}
+
+/* 
+.tooltip-cm{
+  
+  position: absolute;
+  right:200px;
+  top:150px;
+  background-color: rgba(206, 206, 206, 0.858);
+  border: 1px solid rgba(206, 206, 206, 0.858);
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  opacity: 0;
+  transition: opacity 3s;
+}
+.tooltip-kg{
+  
+  position: absolute;
+  right:200px;
+  bottom:260px;
+  background-color: rgba(206, 206, 206, 0.858);
+  border: 1px solid rgba(206, 206, 206, 0.858);
+  color: white;
+  font-size: 12px;
+  padding: 2px 7px;
+  opacity: 0;
+  transition: opacity 3s;
+} */
+
+.boy::placeholder,.kilo::placeholder{
+  color:rgba(173, 173, 173, 0.603); ;
+  
+}
+
+/* .login-input::before{
+  content: '';
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background:rgba(33, 23, 211, 0.400);
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  z-index: -1;
+}
+.login-input::after{
+  content: '';
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background:rgba(33, 23, 211, 0.400);
+  position: absolute;
+  bottom: 0px;
+  left:-50px;
+  z-index: -1;
+} */
+
