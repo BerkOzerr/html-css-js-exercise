@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="/Style/currency-converter.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class="container">
+    <h2>Currency Converter</h2>
+    <div class="amount">
+      <h6>Enter Amount</h6>
+      <input type="number" class="amount-input" placeholder="1">
+    </div>
+    <div class="form-container">
+        <div class="fromcurrency-container">
+          <span>From</span>
+          <div class="selection-container">
+            <img src="https://flagsapi.com/GB/flat/64.png" class="flag flag-from">
+            <select></select>
+          </div>
+          
+        </div>
+        <button class="material-symbols-outlined reverse-change">
+          sync_alt
+        </button>
+        <div class="tocurrency-container">
+          <span>To</span>
+          <div class="selection-container">
+            <img src="https://flagsapi.com/TR/flat/64.png" class="flag flag-to">
+            <select></select>
+          </div>
+        
+        </div>
+    </div>
+    <span class="display-change">Getting Exchange Rate...</span>
+    <button class="exchange-button">Get Exchange Rate</button>  
+  </div>
+  
+  <script src="/Javascript/country-list.js"></script>
+  <script src="/Javascript/currency-converter.js"></script>
+  <script src="/Javascript/apikey.js"></script>
+</body>
+</html>

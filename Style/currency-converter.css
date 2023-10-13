@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background:linear-gradient(60deg,#08001f,#30197d);
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  align-items:center;
+  justify-content: center;
+}
+
+.container{
+  background:#fff;
+  width: 300px;
+  height: fit-content;
+  padding: 30px 30px 0 30px;
+  border-radius: 10px;
+}
+.container h2{
+  text-align: center;
+  font-weight: 500;
+  font-size:24px;
+  margin-bottom: 40px;
+}
+.amount{
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+.amount h6{
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.amount-input{
+  padding: 8px 20px 8px 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+}
+.form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.fromcurrency-container ,.tocurrency-container{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  
+}
+.reverse-change{
+  border: none;
+  outline: none;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 45%;
+  
+}
+.fromcurrency-container span,.tocurrency-container span{
+  margin-bottom: 5px;
+}
+
+.display-change{
+  display: block;
+  text-align: start;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.exchange-button{
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #30197d;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+.selection-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.flag{
+  width: 24px;
+  margin-right: 5px;
+}
+.selection-container select{
+  outline: none;
+  border: none;
+}
+.selection-container select::-webkit-scrollbar{
+  width: 8px;
+}
+.selection-container select::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+.selection-container select::-webkit-scrollbar-thumb{
+  background-color:lightgray;
+  border-radius: 4px;
+  border-right: 2px solid #fff;
+}

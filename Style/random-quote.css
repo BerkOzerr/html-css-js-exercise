@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(29 161 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+  margin-top:10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 500px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  aspect-ratio: 3/1;
+}
+.container h2{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.container h2::before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background-color: darkturquoise;
+  top: 30px;
+}
+.container span:nth-child(2){
+  display: flex;
+  width: 90%;
+  margin: 0 auto 30px auto;
+  font-weight: 500;
+ 
+}
+.container span:nth-child(3){
+  font-size: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 30%;
+}
+.container span:nth-child(3)::before{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: darkturquoise;
+  top:50%;
+  left: -17px;
+  transform: scale(-50%,-50%);
+  
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 10px auto 20px auto;
+}
+
+.button-container button:first-child{
+  background-color: rgb(29 161 242);
+  border: none;
+  font-size: 7px;
+  outline: none;
+  color: white;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.button-container button:nth-child(2){
+  display: flex;
+  background-color: white;
+  border: 1px solid rgb(29 161 242);
+  font-size: 7px;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+.button-container button:nth-child(2) img{
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.button-container button:first-child:hover{
+  opacity: 0.6;
+}
+.button-container button:first-child:active{
+  opacity: 0.2;
+}

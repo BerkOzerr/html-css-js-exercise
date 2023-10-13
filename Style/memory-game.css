@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-color: rgb(121, 32, 165);
+  display: flex;
+}
+
+.memory-game{
+  margin: auto;
+  width: 540px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.front-face , .back-face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border-radius: 5px; 
+  background: rgb(203, 132, 239);
+  backface-visibility: hidden;
+}
+.front-face{
+  transform: rotateY(180deg);
+}
+.memory-card{
+ position: relative;
+  width: calc(25% - 10px);
+  height:calc(33.333% - 10px) ;
+ margin: 5px;
+ transform: scale(1);
+ transform-style: preserve-3d;
+ transition: transform .5s;
+}
+.memory-card.flip{
+  transform: rotateY(180deg);
+}
+
+.memory-card:active{
+  transform: scale(.97);
+  transition: transform .2s;
+}
+.winner-result{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.try-again{
+  display: flex;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: rgb(121, 32, 165);
+  cursor: pointer;
+}
+.try-again:hover{
+  background-color: lightgreen;
+  color: white;
+}
+.game-result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.click-number{
+  position: absolute;
+  color: white;
+  right:10px;
+  bottom: 50%;
+  background-color: rgb(203, 132, 239);
+  z-index: -1;
+  }
